@@ -1,0 +1,116 @@
+<% include('../layouts/header.ejs') %>
+<link rel="stylesheet" href="/css/style.css">
+
+
+<div id="container" class="container">
+    <!-- Form session -->
+     <div class="row">
+        <!-- singUp -->
+         <div class="col align-items-center flex-col sign-up">
+             <div class="form-wrapper align-items-center">
+                  <div class="form sign-up">
+                         <form action="/signin" method="post" id="sign-inForm">
+                            <div class="input-group">
+                                <i class="bx bxs-user"></i>
+                                  <input type="text" placeholder="Student Name" name="name">
+                             </div>
+
+                             <div class="input-group">
+                                <i class="bx bxs-mail-send"></i>
+                                  <input type="email" placeholder="E-mail" name="email">
+                             </div>
+
+                             <div class="input-group">
+                                <i class="bx bxs-lock-alt"></i>
+                                  <input type="number" placeholder="Mobile" name="mobile">
+                             </div>
+
+                             <div class="input-group">
+                                <i class="bx bxs-lock-alt"></i>
+                                  <input type="password" placeholder="password" name="password">
+                             </div>
+                              <input type="submit" class="submit" value="sing-in">
+                              <p>
+                                 <span>Already have an account?</span>
+                                 <b onclick="toggle()" class="pointer">
+                                  Sing-In here
+                                 </b>
+                              </p>
+                              
+                           </form>
+                         
+                     </div>
+                  </div>
+             </div>
+
+
+
+             <!-- End Sing Up -->
+
+            <!-- Sign In -->
+
+             <div class="col align-items-center flex-col sign-in">
+                 <div class="form-wrapper align-items-center">
+                     <div class="form sign-in">
+                       <form action="/login" method="post" >
+                        <div class="input-group">
+                            <i class="bx bxs-mail-send"></i>
+                              <input type="email" placeholder="E-mail" name="email">
+                         </div>
+                         <div class="input-group">
+                            <i class="bx bxs-lock-alt"></i>
+                              <input type="password" placeholder="password" name="password">
+                         </div>
+                         <input type="submit" class="submit" value="sing-up">
+                         <p>
+                           <span>Don't have an account ?</span>
+   
+                           <b onclick="toggle()" class="pointer">Sing up here</b>
+                          </p>
+                       </form>
+                      
+                     </div>
+                 </div>
+                 <div class="form-wrapper">
+                
+                 </div>
+     <!-- End Sing In -->
+             </div>
+         </div>
+<!-- End FORM -->
+<!-- Content Session -->
+
+      <div class="row Content-row">
+         <!-- Sign In content -->
+          <div class="col align-items-center flex-col">
+              <div class="text sign-in">
+                   <h2>WELCOME</h2>
+              </div>
+          </div>
+          <div class="img sign-in">
+
+          </div>
+      <!-- End Sing In Content -->
+       <!-- Sing Up Content -->
+        <div class="col align-items-center flex-col">
+            <div class="img sign-up">
+
+            </div>
+            <div class="text sign-up">
+                 <h2>
+                    Join With Us
+                 </h2>
+            </div>
+        </div>
+      </div>
+        <!-- End Sing up content -->
+         </div>
+         <!-- End content session -->
+     </div>
+
+
+
+<script src="/js/toggle.js"></script>
+
+<% include('../layouts/header.ejs') %>
+
