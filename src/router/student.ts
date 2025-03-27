@@ -1,8 +1,10 @@
-import express from "express";
+import express from 'express';
+
 import studentController from "../controllers/studentController";
 import { islogin,isLogout } from "../middleware/auth";
 
 const router = express.Router();
+
 
 router.get('/',isLogout,studentController.loadSingin);
 router.post('/signin',studentController.SigninStudent);
